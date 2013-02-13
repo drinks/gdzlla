@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%=h yield(:title)%> | <%= setting :site_name %></title>
+
+    <meta name="viewport" content="width=450, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <%= stylesheet_link_tag "application", :media => "screen, projection" %>
+    <%= stylesheet_link_tag "application-mobile", :media => "only screen and (max-device-width: 480px)" %>
+    <%= javascript_include_tag "application" %>
+
+  </head>
+  <body class="<%=h yield(:bodyclass)%>">
+    <div id="wrap" class="clearfix">
+    <div id="header">
+      <div class="container clearfix">
+        <% unless request.path == '/' %>
+          <%= render :partial => "users/user_bar"%>
+        <% end %>
+        <h1>GDZLLA&mdash;Upload to flickr from Twitter</h1>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <%= flash_messages %>
+      <%= yield %>
+    </div>
+    </div>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-6925512-5");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </body>
+</html>

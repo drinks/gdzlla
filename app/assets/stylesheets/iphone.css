@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+------------------------------
+nclud'ed screen styles
+Design & Dev by nclud, LLC
+http://www.nclud.com
+------------------------------
+*/
+
+/*------ Yahoo! Reset CSS ------*/
+* { -webkit-text-size-adjust:none;}
+#header #user_bar a {text-decoration:underline;}
+.container, body.one-col .container {width:450px;margin:0 auto;}
+#header h1 {float:none;margin:0 auto;background-position:center top;}
+.aside {display:none;}
+
+body.home .content, body.main .content {width:auto;padding:0 20px 0 30px;}
+body.one-col #header h1 {display:none;}
+
+body.one-col #header {margin-bottom:30px;}
+body.one-col #header #user_bar {position:static;font-size:16px;float:right;margin-right:20px;}
+body.one-col #header #user_bar div {display:inline;}
+
+
+.big-button {margin-bottom:60px;}
+.big-button a {margin:0 auto;}
+
+ul li {color:#ecffe4;font-size:16px;}
+.errorExplanation li {color:#444;font-size:14px;}

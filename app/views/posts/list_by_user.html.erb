@@ -1,0 +1,11 @@
+<% content_for :title, @user.username %>
+<% content_for :bodyclass, 'one-col' %>
+<div class="content">
+<h2>Recent posts from <a href="http://twitter.com/<%= @user.username %>"><%= @user.username %></a></h2>
+<ul class="posts">
+<% for post in @posts %>
+  <li><a href="<%= post.short_url %>"><img src="<%= post.thumb_url %>" alt="photo" title="Posted by <%= post.owner_name %>" /></a></li>
+<% end %>
+<%= no_posts(@posts) %>
+</ul>
+</div>

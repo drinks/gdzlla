@@ -1,0 +1,9 @@
+h2 {
+	-webkit-transform: scale(0.75) translate(0, -50px);
+	
+}
+
+.skull {
+	width: 700px;
+	-webkit-transform: scale(0.75) translate(0, 95px);
+}

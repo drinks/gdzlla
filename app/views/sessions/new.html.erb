@@ -1,0 +1,14 @@
+<% content_for :title, "Log in to Twitter" %>
+<% content_for :bodyclass, "one-col"%>
+<% @user.password = nil %>
+
+<% form_for(:user, :url => authenticate_path, :html => {:class => 'one'}) do |f| -%>
+<%= label_tag 'Twitter Username' %>
+<%= f.text_field :username, :autocorrect => 'off', :autocapitalize => 'off' %>
+
+<%= label_tag 'Twitter Password' %>
+<%= f.password_field :password %>
+
+<%= submit_tag 'Authenticate', :class => 'submit-btn' %>
+<% end -%>
+<p class="info">(Your password gets hashed, we won't ever know it)</p>

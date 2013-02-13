@@ -1,0 +1,27 @@
+<% content_for :title, @user.username %>
+<% content_for :bodyclass, 'one-col' %>
+<div class="content">
+<h2>
+<% if current_user_is? @user %>
+Your recent posts
+<% else -%>
+Recent posts from <a href="http://twitter.com/<%= @user.username %>" target="_blank"><%= @user.username %></a>
+<% end -%>
+</h2>
+<ul class="posts">
+<% if @user.posts.any? %>
+    <% @user.posts.each do |post| %>
+      <li><a href="<%= post.flickr_url %>"><img src="<%= post.thumb_url %>" alt="photo" title="Posted by <%= @user.username %>" /></a></li>
+    <% end %>
+<% else %>
+    <p class="empty">
+        <% if current_user_is? @user %>
+        You haven't
+        <% else -%>
+        <%= @user.username %> hasn't
+        <% end -%>
+        posted any pictures yet!
+    </p>
+<% end %>
+</ul>
+</div>

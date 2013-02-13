@@ -1,0 +1,30 @@
+defaults: &defaults
+  site_name: GDZLLA
+  twitter_consumer_key: <%= ENV['DEV_TWITTER_CONSUMER_KEY'] %>
+  twitter_consumer_secret: <%= ENV['DEV_TWITTER_CONSUMER_SECRET'] %>
+  twitter_oauth_token: <%= ENV['DEV_TWITTER_OAUTH_KEY'] %>
+  twitter_oauth_token_secret: <%= ENV['DEV_TWITTER_OAUTH_SECRET'] %>
+  twitter_username: <%= ENV['DEV_TWITTER_USERNAME'] %>
+  flickr_key: <%= ENV['DEV_FLICKR_KEY'] %>
+  flickr_secret: <%= ENV['DEV_FLICKR_SECRET'] %>
+  twitter_down: <%= ENV['DEV_TWITTER_DOWN'] %>
+  flickr_down: <%= ENV['DEV_FLICKR_DOWN'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  twitter_consumer_key: <%= ENV['TWITTER_CONSUMER_KEY'] %>
+  twitter_consumer_secret: <%= ENV['TWITTER_CONSUMER_SECRET'] %>
+  twitter_oauth_token: <%= ENV['TWITTER_OAUTH_KEY'] %>
+  twitter_oauth_token_secret: <%= ENV['TWITTER_OAUTH_SECRET'] %>
+  twitter_username: <%= ENV['TWITTER_USERNAME'] %>
+  flickr_key: <%= ENV['FLICKR_KEY'] %>
+  flickr_secret: <%= ENV['FLICKR_SECRET'] %>
+  twitter_down: <%= ENV['TWITTER_DOWN'] %>
+  flickr_down: <%= ENV['FLICKR_DOWN'] %>
+
