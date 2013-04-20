@@ -78,9 +78,6 @@ GEM
     heroku-api (0.3.7)
       excon (~> 0.16.10)
     hike (1.2.1)
-    honeybadger (1.4.0)
-      activesupport
-      json
     httparty (0.10.0)
       multi_json (~> 1.0)
       multi_xml
@@ -224,7 +221,6 @@ DEPENDENCIES
   geocoder
   hashie
   heroku
-  honeybadger
   httparty
   jquery-rails
   mini_magick

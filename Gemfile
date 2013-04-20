@@ -20,7 +20,7 @@ gem 'geocoder'
 gem 'uuid'
 gem 'base58'
 gem 'heroku'
-gem 'honeybadger'
+#gem 'honeybadger'
 
 
 group :assets do
