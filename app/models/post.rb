@@ -73,7 +73,7 @@ class Post
         title = message.sub(/( #[^\s]+ ?)*$/, '')
       end
     end
-    title
+    title || ''
     # title = message.gsub(self.class.tag_pattern, '<a href="http://twitter.com/search?q=%23\1">#\1</a>')
     # title.gsub(self.class.username_pattern, '<a href="http://twitter.com/\1">@\1</a>')
   rescue
