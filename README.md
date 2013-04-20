@@ -15,7 +15,6 @@ Running it yourself:
 4. Set up necessary addons
     - `heroku addons:add mongolab`
     - `heroku addons:add redistogo`
-    - `heroku addons:add honeybadger`
     - `heroku addons:add newrelic`
     - `heroku addons:remove heroku-postgresql`
     - `heroku plugins:install git://github.com/ddollar/heroku-config.git`

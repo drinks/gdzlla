@@ -77,7 +77,7 @@ class Post
     # title = message.gsub(self.class.tag_pattern, '<a href="http://twitter.com/search?q=%23\1">#\1</a>')
     # title.gsub(self.class.username_pattern, '<a href="http://twitter.com/\1">@\1</a>')
   rescue
-    message
+    message || ''
   end
 
   def description
