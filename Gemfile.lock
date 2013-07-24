@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/getsentry/raven-ruby.git
+  revision: 7123787ed5d72b022afa8180da40500b5bc6de73
+  specs:
+    sentry-raven (0.6.0)
+      faraday (>= 0.7.6)
+      hashie (>= 1.1.0)
+      uuidtools
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -199,6 +208,7 @@ GEM
       raindrops (~> 0.7)
     uuid (2.3.6)
       macaddr (~> 1.0)
+    uuidtools (2.1.4)
     vcr (1.6.0)
     xml-magic (0.1.1)
     xmp (0.2.0)
@@ -233,6 +243,7 @@ DEPENDENCIES
   oauth
   rack-rewrite
   rails (= 3.2.8)
+  sentry-raven!
   simple_form
   twitter
   uglifier (>= 1.0.3)

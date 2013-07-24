@@ -20,7 +20,7 @@ gem 'geocoder'
 gem 'uuid'
 gem 'base58'
 gem 'heroku'
-#gem 'honeybadger'
+gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
 
 
 group :assets do
