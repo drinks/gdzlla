@@ -39,7 +39,7 @@ class PostsController < ApplicationController
   end
 
   def create_from
-    method = "create_from_#{service}".to_sym
+    method = "create_from_#{CGI::escape(params[:service])}".to_sym
     if self.respond_to? method
       send method
     else
