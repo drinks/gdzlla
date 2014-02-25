@@ -123,6 +123,12 @@ class Post
     }
   end
 
+  def as_basic_response
+    {
+      url: url
+    }
+  end
+
   private
 
   def extract_metadata

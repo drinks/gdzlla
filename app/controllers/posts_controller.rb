@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       @post = Post.new(post_params)
       @post.user = current_user
       if @post.save
-        response = @post.as_response
+        response = @post.as_basic_response
       else
         response = {errors: @post.errors, status: 400}
       end
