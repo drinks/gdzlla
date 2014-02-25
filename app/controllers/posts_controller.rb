@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       @post = Post.new(post_params)
       @post.user = current_user
       if @post.save
-        response = @post.as_basic_response
+        response = @post.as_response
       else
         response = {errors: @post.errors, status: 400}
       end
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
       response = {error: err, status: 400}
       respond_to do |format|
         format.xml {render xml: response, status: 400}
-        format.xml {Rails.logger.info(response.to_json); render json: response, status: 400}
+        format.xml {render json: response, status: 400}
       end
     end
   end

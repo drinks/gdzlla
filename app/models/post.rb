@@ -111,6 +111,7 @@ class Post
       id: short_id,
       text: title,
       url: url,
+      mediaurl: url,
       width: nil,
       height: nil,
       size: nil,
