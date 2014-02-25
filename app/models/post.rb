@@ -125,7 +125,7 @@ class Post
 
   def as_basic_response
     {
-      url: url
+      mediaurl: url
     }
   end
 
