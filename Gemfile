@@ -13,7 +13,7 @@ gem 'xmp'
 gem 'simple_form'
 gem 'oauth'
 gem 'twitter'
-gem 'flickr_fu'
+gem 'flickr_fu', :git => "https://github.com/drinks/flickr_fu.git"
 gem 'httparty'
 gem 'hashie'
 gem 'geocoder'

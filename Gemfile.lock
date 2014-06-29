@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/drinks/flickr_fu.git
+  revision: 97f6781446a0b28ef6dc5ed3bd409679c84b4b02
+  specs:
+    flickr_fu (0.3.2)
+      mime-types
+      xml-magic
+
+GIT
   remote: https://github.com/getsentry/raven-ruby.git
   revision: 7123787ed5d72b022afa8180da40500b5bc6de73
   specs:
@@ -65,9 +73,6 @@ GEM
     faraday (0.8.4)
       multipart-post (~> 1.1)
     ffi (1.1.5)
-    flickr_fu (0.3.2)
-      mime-types
-      xml-magic
     formatize (1.1.0)
       RedCloth (~> 4.2)
       actionpack (~> 3.0)
@@ -225,7 +230,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   exifr
-  flickr_fu
+  flickr_fu!
   formatize
   fuubar
   geocoder
