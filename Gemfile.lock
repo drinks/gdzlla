@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/drinks/flickr_fu.git
-  revision: 97f6781446a0b28ef6dc5ed3bd409679c84b4b02
+  revision: 8174c4b221fb7a61bf905e9d4cd5b13ac8bebf74
   specs:
     flickr_fu (0.3.2)
       mime-types
@@ -113,7 +113,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     metaclass (0.0.1)
-    mime-types (1.19)
+    mime-types (1.25.1)
     mini_magick (3.4)
       subexec (~> 0.2.1)
     minitest (3.2.0)
