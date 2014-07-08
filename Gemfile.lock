@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/drinks/flickr_fu.git
-  revision: 9c5ad0a065e522bdcf181070de50c2846fd5718c
+  revision: 9fbbd05d6ed337de2e76e68156578036e4b5174f
   specs:
     flickr_fu (0.3.2)
       mime-types
